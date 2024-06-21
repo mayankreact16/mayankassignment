@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - ATG World</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="closeOverlay()">&times;</span>
+            <div class="form-container">
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit">Create Account</button>
+                    <div class="social-signup">
+                        <button type="button" class="facebook">Sign up with Facebook</button>
+                        <button type="button" class="google">Sign up with Google</button>
+                    </div>
+                </form>
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            </div>
+            <div class="gif-container">
+                <img src="path/to/your/gif.gif" alt="Sign Up GIF">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function closeOverlay() {
+            document.querySelector('.overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

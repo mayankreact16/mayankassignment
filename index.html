@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATG World </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .filters {
+            background-color: #f9f9f9;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .filters-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: #707070;
+        }
+
+        .filters-content span {
+            margin-right: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .filters-content .location {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .filters-content .location img {
+            margin-left: 5px;
+        }
+
+        .group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .group-header .group-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .group-header .group-info h2 {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .group-header .group-info p {
+            margin: 5px 0 0 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .group-header .group-actions {
+            display: flex;
+        }
+
+        .group-header .group-actions .write-post, 
+        .group-header .group-actions .join-group {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .group-header .group-actions .write-post {
+            background-color: #007bff;
+        }
+
+        .group-header .group-actions .join-group {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="assets/ATG.WORLD Logo.png" alt="ATG.WORLD Logo" class="logo">
+                <input type="text" class="input" placeholder="Search for your favorite groups in ATG">
+                <a href="#" class="create-account" onclick="showOverlay()">Create account. It's free!</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="group-header">
+            <div class="container">
+                <div class="group-info">
+                    <h1>Computer Engineering</h1>
+                    <p>142,765 Computer Engineers follow this</p>
+                </div>
+                <div class="group-actions">
+                    <a href="#" class="write-post">Write a Post</a>
+                    <a href="#" class="join-group">Join Group</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Sections -->
+        <section class="filters">
+            <div class="container">
+                <div class="filters-content">
+                    <span>All Posts(32)</span>
+                    <span>Article</span>
+                    <span>Event</span>
+                    <span>Education</span>
+                    <span>Job</span>
+                    <span class="location">Noida, India <img src="assets/outline-location_on-24px 2.png" alt="Location Icon"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="post">
+                    <img src="assets/Rectangle 5-2.png" alt="Post Image">
+                    <div class="post-details">
+                        <span class="post-type">📝 Article</span>
+                        <h3>What if famous brands had regular fonts? Meet RegulaBrands!</h3>
+                        <p>I've worked in UX for the better part of a decade. From now on, I plan to...</p>
+                        <div class="post-footer">
+                            <span class="author">Sarthak Kamra</span>
+                           
+                            <span class="views">1.4k views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/Rectangle 5.png" alt="Post Image">
+                    <div class="post-details">
+                        <span class="post-type">📚 Education</span>
+                        <h3>Tax Benefits for Investment under National Pension Scheme launched by Government</h3>
+                        <p>I've worked in UX for the better part of a decade. From now on, I plan to...</p>
+                        <div class="post-footer">
+                            <span class="author">Sarah West</span>
+                      
+                            <span class="views">1.4k views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/Rectangle 5-1.png" alt="Post Image">
+                    <div class="post-details">
+                        <span class="post-type">📅 Meetup</span>
+                        <h3>Finance & Investment Elite Social Mixer @Lujiazui</h3>
+                        <p>Fri, 12 Oct, 2018 - Ahmedabad, India</p>
+                        <div class="post-footer">
+                            <span class="author">Ronal Jones</span>
+                        
+                            <span class="views">1.4k views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/Rectangle 2-1.png" alt="Post Image">
+                    <div class="post-details">
+                        <span class="post-type">💼 Job</span>
+                        <h3>Software Developer</h3>
+                        <p>Innovaccer Analytics Private Ltd. - Noida, India</p>
+                        <div class="post-footer">
+                            <span class="author">Joseph Gray</span>
+                      
+                            <span class="views">1.4k views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="closeOverlay()">&times;</span>
+            <div class="form-container">
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit">Create Account</button>
+                    <div class="social-signup">
+                        <button type="button" class="facebook">Sign up with Facebook</button>
+                        <button type="button" class="google">Sign up with Google</button>
+                    </div>
+                </form>
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            </div>
+            <div class="gif-container">
+                <img src="assets/YPt0lUwW8dL86sV408.gif" alt="Sign Up GIF">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showOverlay() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function closeOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
